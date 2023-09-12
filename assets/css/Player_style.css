@@ -1,0 +1,239 @@
+/* Define styles for the overall page body */
+body {
+  background: #f3f9d2;
+  text-align: center;
+  font-family: 'konstant_groteskbook', sans-serif;
+}
+
+/* Remove underline for links */
+a:link {
+  text-decoration: none;
+}
+
+/* Styles for heading level 2 */
+body h2 {
+  font-size: 4rem;
+}
+
+/* Styles for heading level 3 */
+body h3 {
+  font-size: 2rem;
+  font-family: 'konstant_groteskbook', sans-serif;
+}
+
+/* Styles for paragraphs */
+body p {
+  font-size: 1rem;
+  font-family: 'konstant_groteskbook', sans-serif;
+}
+
+/* Styles for buttons */
+button {
+  font-family: 'konstant_groteskbook', sans-serif;
+  margin: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* Styles for button hover effect */
+button:after {
+  content: "";
+  background-color: #c0d684;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+/* Button hover animation */
+button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+/* Media query for larger screens (min-width: 768px) */
+@media (min-width: 768px) {
+  /* Adjust button padding */
+  button {
+    padding: 13px 50px 13px;
+  }
+}
+
+/* Styles for the tic-tac-toe game */
+#tic-tac-toe {
+  border-spacing: 0px;
+  margin: 30px auto;
+}
+
+/* Styles for table cells in the game */
+td {
+  font-family: 'Danson', sans-serif;
+  font-size: 2rem;
+}
+
+/* Styles for table cells in the game grid */
+#tic-tac-toe td {
+  border: 2px solid #000000;
+  height: 100px;
+  width: 100px;
+  text-align: center;
+}
+
+/* Remove top border for the first row */
+#tic-tac-toe tr:first-child td {
+  border-top: none;
+}
+
+/* Remove bottom border for the last row */
+#tic-tac-toe tr:last-child td {
+  border-bottom: none;
+}
+
+/* Remove left border for the first column */
+#tic-tac-toe tr td:first-child {
+  border-left: none;
+}
+
+/* Remove right border for the last column */
+#tic-tac-toe tr td:last-child {
+  border-right: none;
+}
+
+/* Media queries for responsive design */
+
+/* Extra small devices (phones) */
+@media (max-width: 300px) {
+  body h2 {
+    font-size: 3rem;
+  }
+
+  body h3 {
+    font-size: 2rem;
+  }
+
+  body p {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 14px;
+    padding: 10px 20px;
+    margin: 10px;
+  }
+}
+
+/* Small devices (portrait tablets and small desktops) */
+@media (min-width: 301px) and (max-width: 600px) {
+  body h2 {
+    font-size: 4rem;
+  }
+
+  body h3 {
+    font-size: 3rem;
+  }
+
+  body p {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 12px 30px;
+    margin: 10px;
+  }
+}
+
+/* Small devices (landscape tablets and larger phones) */
+@media (min-width: 601px) and (max-width: 900px) {
+  body h2 {
+    font-size: 5rem;
+  }
+
+  body h3 {
+    font-size: 4rem;
+  }
+
+  body p {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 13px 40px;
+    margin: 15px;
+  }
+}
+
+/* Medium devices (small desktops and laptops) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  body h2 {
+    font-size: 6rem;
+  }
+
+  body h3 {
+    font-size: 5rem;
+  }
+
+  body p {
+    font-size: 2.2rem;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 14px 50px;
+    margin: 20px;
+  }
+}
+
+/* Large devices (large desktops) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+  body h2 {
+    font-size: 7rem;
+  }
+
+  body h3 {
+    font-size: 6rem;
+  }
+
+  body p {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 22px;
+    padding: 15px 60px;
+    margin: 20px;
+  }
+}
+
+/* Extra large devices (extra-large desktops) */
+@media (min-width: 1601px) and (max-width: 1900px) {
+  body h2 {
+    font-size: 8rem;
+  }
+
+  body h3 {
+    font-size: 7rem;
+  }
+
+  body p {
+    font-size: 2.8rem;
+  }
+
+  button {
+    font-size: 24px;
+    padding: 16px 70px;
+    margin: 20px;
+  }
+}

@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <!-- Document metadata -->
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <!-- Link to external CSS file for styling -->
+  <link rel="stylesheet" href="assets/css/Player_style.css">
+  <link rel="stylesheet" href="assets/Font/stylesheet.css"> <!-- Link to an external stylesheet -->
+
+  <!-- Link to external JavaScript file with defer attribute for asynchronous loading -->
+  <script src="assets/js/Player_script.js" defer></script>
+
+  <!-- Title of the web page -->
+  <title>Multiplayer</title>
+</head>
+
+<body>
+  <!-- Main content of the web page -->
+  
+  <!-- Heading level 2 with a message -->
+  <h2>GOOD LUCK</h2> 
+
+  <!-- Heading level 3 with a title -->
+  <h3>Multiplayer</h3>
+  
+  <!-- Table for displaying the scoreboard -->
+  <table id="scoreboard" align ="center">
+    <!-- Table rows for players -->
+    <tr>
+      <!-- Table data cell for Player 1 -->
+      <td> Player 1 </td>
+      <!-- Empty table data cell for spacing -->
+      <td width="30"> </td>
+      <!-- Table data cell for Player 2 -->
+      <td> Player 2 </td>
+    </tr>
+    <!-- End of player rows -->
+    
+    <!-- Table rows for player scores -->
+    <tr>
+      <!-- Table data cell for Player 1's score -->
+      <td class="score" id="player1">
+        0 
+      </td>
+      <!-- Empty table data cell for spacing -->
+      <td> &nbsp; </td>
+      <!-- Table data cell for Player 2's score -->
+      <td class="score" id="player2">
+        0 
+      </td>
+      <!-- End of player score cells -->
+    </tr>
+    <!-- End of player score rows -->
+  </table>
+  
+  <!-- Placeholder for additional content -->
+  <div id="placeholder"></div>
+  
+  <!-- Button to trigger the "restart" function -->
+  <button onclick="restart()" style="color:black;">
+    Replay
+  </button>
+  <!-- End of "REPLAY" button -->
+
+  <!-- Button to navigate back to the homepage -->
+  <button>
+    <a href="HomePage_Index.html" style="color:black;">
+    Back
+  </a>
+  </button>
+  <!-- End of "BACK" button -->
+</body>
+</html>

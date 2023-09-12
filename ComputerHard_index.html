@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<!-- Set the character encoding for the document -->
+	<meta charset="UTF-8">
+	
+	<!-- Define the viewport settings for responsive design -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	
+	<!-- Specify the document's compatibility with IE browsers -->
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	
+	<!-- Set the character encoding again (duplicate) -->
+	<meta charset="UTF-8">
+	
+	<!-- Define the title of the webpage -->
+	<title>Hard Level</title>
+	
+	<!-- Link to the external CSS stylesheet for styling -->
+	<link rel="stylesheet" href="assets/css/ComputerHard_style.css">
+	<link rel="stylesheet" href="assets/Font/stylesheet.css"> <!-- Link to an external stylesheet -->
+</head>
+
+<body>
+	<!-- Main heading with a wish of good luck -->
+	<h2>GOOD LUCK</h2>
+	
+	<!-- Subheading indicating the hard level -->
+	<h3>Hard Level</h3>
+	
+	<!-- Table for the game grid -->
+	<table>
+		<tr>
+			<td class="cell" id="0"></td>
+			<td class="cell" id="1"></td>
+			<td class="cell" id="2"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="3"></td>
+			<td class="cell" id="4"></td>
+			<td class="cell" id="5"></td>
+		</tr>
+		<tr>
+			<td class="cell" id="6"></td>
+			<td class="cell" id="7"></td>
+			<td class="cell" id="8"></td>
+		</tr>
+	</table>
+	<!-- End of table game -->
+
+	<!-- Element to display endgame messages -->
+	<div class="endgame">
+		<div class="text"></div>
+	</div>
+
+	<!-- Replay button to start the game again -->
+	<button onClick="startGame()">
+		<a>Replay</a>
+	</button>
+	<!-- End of replay button -->
+
+	<!-- Back button to return to the homepage -->
+	<button>
+		<a href="HomePage_Index.html" style="color:black;">Back</a>
+	</button>
+	<!-- End of back button -->
+
+	<!-- Link to the JavaScript file for game functionality -->
+	<script src="assets/js/ComputerHard_script.js"></script>
+</body>
+</html>

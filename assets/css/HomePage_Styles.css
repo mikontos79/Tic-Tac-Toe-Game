@@ -1,0 +1,192 @@
+
+
+/* Styles for the body of the webpage */
+body {
+  background: #f3f9d2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh; /* Set the body height to 100% of the viewport height */
+  margin: 0;
+  padding-top: 10px; /* Add minimum 10px gap from the top */
+}
+
+/* Styles for a container element */
+.container {
+  text-align: center;
+}
+
+/* Styles for heading level 1 in the body */
+body h1 {
+  font-size: 6rem;
+  font-family: 'konstant_groteskbook', sans-serif;
+}
+
+/* Styles for heading level 2 in the body */
+body h2 {
+  font-size: 6rem;
+  font-family: 'konstant_groteskbook', sans-serif;
+}
+
+/* Styles for paragraphs in the body */
+body p {
+  font-size: 1rem;
+  font-family: 'konstant_groteskbook', sans-serif;
+}
+
+/* Styles for buttons */
+button {
+  font-family: 'konstant_groteskbook', sans-serif;
+  margin: 20px;
+  font-size: 20px;
+  letter-spacing: 1px;
+  outline: 0;
+  border: 1px solid black;
+  cursor: pointer;
+  position: relative;
+  background-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+}
+
+/* Styles for button hover effect */
+button:after {
+  content: "";
+  background-color: #c0d684;
+  width: 100%;
+  z-index: -1;
+  position: absolute;
+  height: 100%;
+  top: 7px;
+  left: 7px;
+  transition: 0.2s;
+}
+
+button:hover:after {
+  top: 0px;
+  left: 0px;
+}
+
+/* Media queries for different screen sizes */
+
+/* Extra small devices (phones) */
+@media (max-width: 300px) {
+  body h1 {
+    font-size: 4rem;
+  }
+
+  body h2 {
+    font-size: 3rem;
+  }
+
+  body p {
+    font-size: 1.5rem;
+  }
+
+  button {
+    font-size: 16px;
+    padding: 10px 30px;
+  }
+}
+
+/* Small devices (portrait tablets and small desktops) */
+@media (min-width: 301px) and (max-width: 600px) {
+  body h1 {
+    font-size: 5rem;
+  }
+
+  body h2 {
+    font-size: 4rem;
+  }
+
+  body p {
+    font-size: 1.8rem;
+  }
+
+  button {
+    font-size: 18px;
+    padding: 12px 40px;
+  }
+}
+
+/* Small devices (landscape tablets and larger phones) */
+@media (min-width: 601px) and (max-width: 900px) {
+  body h1 {
+    font-size: 6rem;
+  }
+
+  body h2 {
+    font-size: 5rem;
+  }
+
+  body p {
+    font-size: 2rem;
+  }
+
+  button {
+    font-size: 20px;
+    padding: 13px 50px;
+  }
+}
+
+/* Medium devices (small desktops and laptops) */
+@media (min-width: 901px) and (max-width: 1200px) {
+  body h1 {
+    font-size: 7rem;
+  }
+
+  body h2 {
+    font-size: 6rem;
+  }
+
+  body p {
+    font-size: 2.2rem;
+  }
+
+  button {
+    font-size: 22px;
+    padding: 15px 60px;
+  }
+}
+
+/* Large devices (large desktops) */
+@media (min-width: 1201px) and (max-width: 1600px) {
+  body h1 {
+    font-size: 8rem;
+  }
+
+  body h2 {
+    font-size: 7rem;
+  }
+
+  body p {
+    font-size: 2.5rem;
+  }
+
+  button {
+    font-size: 24px;
+    padding: 16px 70px;
+  }
+}
+
+/* Extra large devices (extra-large desktops) */
+@media (min-width: 1601px) and (max-width: 1900px) {
+  body h1 {
+    font-size: 9rem;
+  }
+
+  body h2 {
+    font-size: 8rem;
+  }
+
+  body p {
+    font-size: 2.8rem;
+  }
+
+  button {
+    font-size: 26px;
+    padding: 18px 80px;
+  }
+}

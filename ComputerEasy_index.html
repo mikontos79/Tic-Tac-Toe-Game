@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <!-- Character encoding -->
+    <meta charset="UTF-8">
+    
+    <!-- Responsive design settings -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- Compatibility settings for Internet Explorer -->
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    
+    <!-- Duplicate character encoding (redundant) -->
+    <!--<meta charset="UTF-8">-->
+    
+    <!-- Title of the webpage -->
+    <title>Easy Level</title>
+    
+    <!-- Link to the external CSS stylesheet -->
+    <link rel="stylesheet" href="assets/css/ComputerEasy_style.css">
+    <link rel="stylesheet" href="assets/Font/stylesheet.css"> <!-- Link to an external stylesheet -->
+</head>
+
+<body>
+    <!-- Main heading -->
+    <h2>GOOD LUCK</h2>
+    
+    <!-- Subheading for the easy level -->
+    <h3>Easy Level</h3>
+
+    <!-- Table for the game grid -->
+    <table>
+        <tr>
+            <!-- Individual cells of the grid -->
+            <td class="cell" id="0"></td>
+            <td class="cell" id="1"></td>
+            <td class="cell" id="2"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="3"></td>
+            <td class="cell" id="4"></td>
+            <td class="cell" id="5"></td>
+        </tr>
+        <tr>
+            <td class="cell" id="6"></td>
+            <td class="cell" id="7"></td>
+            <td class="cell" id="8"></td>
+        </tr>
+    </table>
+
+    <!-- Container for displaying game ending messages -->
+    <div class="endgame">
+        <div class="text"></div>
+    </div>
+
+    <!-- Replay button with an associated JavaScript function -->
+    <button onClick="startGame()">
+        <a>Replay</a>
+    </button>
+
+    <!-- Back button with a link to the homepage -->
+    <button>
+        <a href="HomePage_Index.html" style="color:black;">Back</a>
+    </button>
+
+    <!-- Link to the external JavaScript file for this page -->
+    <script src="assets/js/ComputerEasy_script.js" style="color:black;"></script>
+</body>
+</html>

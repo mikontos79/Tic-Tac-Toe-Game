@@ -1,0 +1,9 @@
+
+@font-face {
+    font-family: 'konstant_groteskbook';
+    src: url('neuekonstantgrotesk-book-webfont.woff2') format('woff2'),
+         url('neuekonstantgrotesk-book-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
